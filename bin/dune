@@ -1,0 +1,4 @@
+(executable
+ (public_name bug_ocaml_gh_action)
+ (name main)
+ (libraries bug_ocaml_gh_action))

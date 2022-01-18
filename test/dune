@@ -1,0 +1,2 @@
+(test
+ (name bug_ocaml_gh_action))

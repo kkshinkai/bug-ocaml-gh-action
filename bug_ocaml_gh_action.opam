@@ -1,0 +1,18 @@
+opam-version: "2.0"
+name: "bug_ocaml_gh_action"
+version: "0.1"
+synopsis: ""
+description: """
+"""
+maintainer: "Kk Shinkai <kkshinkai@gmail.com>"
+authors: "Kk Shinkai <kkshinkai@gmail.com>"
+license: "MIT"
+homepage: ""
+bug-reports: ""
+dev-repo: ""
+depends: [ "ocaml" "ocamlfind" ]
+build: [
+  ["./configure" "--prefix=%{prefix}%"]
+  [make]
+]
+install: [make "install"]
