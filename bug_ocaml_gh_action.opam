@@ -7,12 +7,12 @@ description: """
 maintainer: "Kk Shinkai <kkshinkai@gmail.com>"
 authors: "Kk Shinkai <kkshinkai@gmail.com>"
 license: "MIT"
-homepage: ""
-bug-reports: ""
-dev-repo: ""
-depends: [ "ocaml" "ocamlfind" ]
-build: [
-  ["./configure" "--prefix=%{prefix}%"]
-  [make]
+homepage: "https://github.com/kkshinkai/bug-ocaml-gh-action"
+bug-reports: "https://github.com/kkshinkai/bug-ocaml-gh-action/issues"
+depends: [
+  "ocaml" {>= "4.02.3"}
+  "dune" {>= "2.7"}
 ]
-install: [make "install"]
+build: [
+  ["dune" "build"]
+]
